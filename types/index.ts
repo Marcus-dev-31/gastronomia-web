@@ -1,68 +1,68 @@
-export type CategoriaOnline =
+export type CourseCategory =
   | "Panadería"
   | "Cocina"
   | "Pastelería"
   | "Gestión";
 
-export interface CursoOnline {
+export interface OnlineCourse {
   slug: string;
-  nombre: string;
-  descripcion: string;
-  descripcionLarga: string;
-  precio: number;
-  precioAnterior?: number;
-  precioDolar?: number;
-  categoria: CategoriaOnline;
-  imagen: string;
-  acceso: string;
-  destacado: boolean;
-  aprendizajes: string[];
-  orientadoPara: string;
-  requerimientos: string;
-  temario: string[];
-  recursos: string[];
+  name: string;
+  description: string;
+  longDescription: string;
+  price: number;
+  previousPrice?: number;
+  dollarPrice?: number;
+  category: CourseCategory;
+  image: string;
+  access: string;
+  featured: boolean;
+  learnings: string[];
+  targetAudience: string;
+  requirements: string;
+  syllabus: string[];
+  resources: string[];
 }
 
-export interface CursoPresencial {
+export interface InPersonCourse {
   slug: string;
-  nombre: string;
-  descripcion: string;
-  descripcionLarga: string;
-  precio: number;
-  precioDolar: number;
-  imagen: string;
-  fecha: string;
-  horario: string;
-  ubicacion: string;
-  direccion: string;
-  cupos: number;
-  aprendizajes: string[];
-  incluye: string[];
+  name: string;
+  description: string;
+  longDescription: string;
+  price: number;
+  dollarPrice: number;
+  image: string;
+  date: string;
+  schedule: string;
+  location: string;
+  address: string;
+  spots: number;
+  learnings: string[];
+  includes: string[];
 }
 
-export interface Libro {
+export interface Book {
   slug: string;
-  nombre: string;
-  descripcion: string;
-  imagen: string;
-  linkCompra: string;
-  precio?: number;
+  name: string;
+  description: string;
+  image: string;
+  purchaseLink: string;
+  price?: number;
 }
 
-export interface Testimonio {
+export interface Testimonial {
   id: number;
-  nombre: string;
-  texto: string;
-  estrellas: number;
-  curso: string;
+  name: string;
+  text: string;
+  rating: number;
+  course: string;
 }
 
-export interface VideoYouTube {
+export interface YouTubeVideo {
   id: string;
-  titulo: string;
+  title: string;
 }
 
 export interface StatItem {
-  valor: string;
+  value: string;
   label: string;
 }
