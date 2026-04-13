@@ -71,7 +71,7 @@ export const onlineCourses: OnlineCourse[] = [
     category: "Pastelería",
     image: "/images/cursos/laminados.jpg",
     access: "Acceso ilimitado. Sin límite de tiempo.",
-    featured: false,
+    featured: true,
     learnings: [
       "Medialunas de manteca",
       "Facturas de manteca",
@@ -174,7 +174,7 @@ export const onlineCourses: OnlineCourse[] = [
     category: "Cocina",
     image: "/images/cursos/pastas-salsas.jpg",
     access: "Acceso ilimitado. Sin límite de tiempo.",
-    featured: false,
+    featured: true,
     learnings: [],
     targetAudience: "",
     requirements: "",
