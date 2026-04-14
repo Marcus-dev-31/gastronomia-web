@@ -12,6 +12,7 @@ export default function AboutMarcos() {
                 src="/images/hero.webp"
                 alt="Marcos Di Cesare"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

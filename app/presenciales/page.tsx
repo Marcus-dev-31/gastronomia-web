@@ -32,6 +32,7 @@ export default function PresencialesPage() {
                     src={course.image}
                     alt={course.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, 40vw"
                     className="object-cover"
                   />
                 </div>

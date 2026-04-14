@@ -25,13 +25,14 @@ export default function LibrosPage() {
               className="bg-brand-light rounded-2xl overflow-hidden shadow-sm border border-brand-dark/5"
             >
               <div className="relative aspect-3/4 w-full bg-brand-dark">
-  <Image
-    src={book.image}
-    alt={book.name}
-    fill
-    className="object-contain p-4"
-  />
-</div>
+                <Image
+                  src={book.image}
+                  alt={book.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-contain p-4"
+                />
+              </div>
               <div className="p-6">
                 <h2 className="font-serif text-2xl text-brand-dark">
                   {book.name}

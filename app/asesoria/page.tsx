@@ -79,6 +79,7 @@ export default function AsesoriaPage() {
                 src="/images/asesoria.webp"
                 alt="Marcos Di Cesare - Asesoría Gastronómica"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 className="object-cover"
               />

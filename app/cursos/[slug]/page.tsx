@@ -96,6 +96,7 @@ export default async function CourseDetailPage({
                 src={course.image}
                 alt={course.name}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 className="object-cover"
               />

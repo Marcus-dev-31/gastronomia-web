@@ -38,6 +38,7 @@ export default function Advisory() {
                 src="/images/asesoria.webp"
                 alt="Marcos Di Cesare - Asesoría Gastronómica"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
