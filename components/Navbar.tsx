@@ -28,6 +28,7 @@ export default function Navbar() {
               alt="Marcos Di Cesare"
               width={40}
               height={40}
+              style={{ width: "auto", height: "auto" }}
             />
             <span className="font-serif text-xl text-brand-dark">
               Marcos Di Cesare
