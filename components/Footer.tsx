@@ -123,7 +123,7 @@ export default function Footer() {
 
         {/* Barra inferior */}
         <div className="border-t border-brand-cream/10 mt-10 pt-6 text-center">
-          <p className="text-sm text-brand-cream/40">
+          <p className="text-sm text-brand-cream/60">
             © {new Date().getFullYear()} Marcos Di Cesare. Todos los derechos
             reservados.
           </p>

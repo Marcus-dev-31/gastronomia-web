@@ -27,7 +27,7 @@ export default function Advisory() {
               </div>
             </div>
             <div className="mt-8 flex justify-center md:justify-start">
-              <Button href="/asesoria">Más información</Button>
+              <Button href="/asesoria">Conocé la asesoría gastronómica</Button>
             </div>
           </div>
 
