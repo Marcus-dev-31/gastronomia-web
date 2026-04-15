@@ -26,7 +26,7 @@ export default function YouTubeVideos() {
             rel="noopener noreferrer"
             className="text-brand-gold font-semibold hover:underline"
           >
-            Ver más videos en YouTube →
+            Ver más videos en el canal de YouTube
           </a>
         </div>
       </div>
