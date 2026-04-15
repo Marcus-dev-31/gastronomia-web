@@ -15,7 +15,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="bg-brand-dark py-16 md:py-24">
+    <section className="bg-brand-dark py-16 md:py-24 border-b border-brand-cream/10">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-serif text-3xl md:text-4xl text-brand-cream">
           Recibí una receta gratis

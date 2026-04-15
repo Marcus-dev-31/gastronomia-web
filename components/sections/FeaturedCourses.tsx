@@ -28,6 +28,7 @@ export default function FeaturedCourses() {
                 previousPrice={course.previousPrice}
                 category={course.category}
                 image={course.image}
+                imagePosition={course.imagePosition}
               />
             </div>
           ))}

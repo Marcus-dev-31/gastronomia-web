@@ -61,15 +61,36 @@ export default function AsesoriaPage() {
               </div>
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button href="#">Contratar asesoría</Button>
-              <Button
-                href="https://wa.me/5491100000000"
-                variant="outline"
-              >
-                Consultar por WhatsApp
-              </Button>
-            </div>
+            <div className="mt-8 flex flex-col gap-4">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+    <Button href="#">Contratar asesoría</Button>
+    <Button
+      href="https://wa.me/5491100000000"
+      variant="outline"
+    >
+      Consultar por WhatsApp
+    </Button>
+  </div>
+  <a
+    href="#"
+    className="inline-flex items-center gap-2 text-brand-gold text-sm font-medium hover:underline justify-center md:justify-start"
+  >
+    <svg
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+      />
+    </svg>
+    Comprar como regalo
+  </a>
+</div>
           </div>
 
           {/* Imagen */}

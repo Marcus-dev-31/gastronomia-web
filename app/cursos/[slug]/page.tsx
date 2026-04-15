@@ -9,7 +9,11 @@ export function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const course = onlineCourses.find((c) => c.slug === slug);
 
@@ -84,9 +88,28 @@ export default async function CourseDetailPage({
               )}
             </div>
 
-            <div className="mt-8">
-              <Button href="#">Comprar curso</Button>
-            </div>
+            <div className="mt-8 flex flex-col gap-3">
+  <Button href="#">Comprar curso</Button>
+  <a
+    href="#"
+    className="inline-flex items-center gap-2 text-brand-gold text-sm font-medium hover:underline"
+  >
+    <svg
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+      />
+    </svg>
+    Comprar como regalo
+  </a>
+</div>
           </div>
 
           {/* Imagen */}
@@ -99,6 +122,7 @@ export default async function CourseDetailPage({
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 className="object-cover"
+                style={{ objectPosition: course.imagePosition || "top" }}
               />
             </div>
           </div>
@@ -229,6 +253,30 @@ export default async function CourseDetailPage({
             </div>
           </div>
         )}
+
+        {/* Instructor */}
+        <div className="mt-16 text-center">
+          <h2 className="font-serif text-2xl text-brand-dark mb-6">
+            Instructor
+          </h2>
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src="/images/marcos-instructor.webp"
+              alt="Marcos Di Cesare"
+              width={80}
+              height={80}
+              className="rounded-full grayscale"
+            />
+            <p className="font-semibold text-brand-dark">
+              Marcos Di Cesare
+            </p>
+            <p className="text-sm text-brand-gray max-w-md">
+              Cocinero hace +20 años. Egresado del Instituto Argentino
+              de Gastronomía. Autor de "Anti Recetas" y "Sos infeliz y
+              es tu culpa".
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

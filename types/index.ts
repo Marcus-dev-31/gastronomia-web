@@ -21,6 +21,7 @@ export interface OnlineCourse {
   requirements: string;
   syllabus: string[];
   resources: string[];
+  imagePosition?: string;  // "top" | "center" | "bottom";
 }
 
 export interface InPersonCourse {

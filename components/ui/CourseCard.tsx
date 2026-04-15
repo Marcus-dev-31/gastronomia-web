@@ -10,6 +10,7 @@ interface CourseCardProps {
   previousPrice?: number;
   category: CourseCategory;
   image: string;
+  imagePosition?: string;
 }
 
 export default function CourseCard({
@@ -20,6 +21,7 @@ export default function CourseCard({
   previousPrice,
   category,
   image,
+  imagePosition = "top",
 }: CourseCardProps) {
   return (
     <Link
@@ -34,6 +36,7 @@ export default function CourseCard({
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
+          style={{ objectPosition: imagePosition || "top" }}
         />
         <span className="absolute top-3 left-3 bg-brand-gold text-white text-xs font-semibold px-3 py-1 rounded-full">
           {category}

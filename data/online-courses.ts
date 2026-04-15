@@ -20,6 +20,7 @@ export const onlineCourses: OnlineCourse[] = [
     requirements: "",
     syllabus: [],
     resources: [],
+    imagePosition: "center 30%",
   },
   {
     slug: "pan-de-burger",
